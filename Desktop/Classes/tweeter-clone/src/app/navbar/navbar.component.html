@@ -1,0 +1,10 @@
+<ng-container *ngIf="users">
+  <div class="navbar">
+    <div class="logo">Twitter Clone</div>
+    <select [(ngModel)]="selectedUser" (change)="onUserChange()">
+      <option *ngFor="let user of users" [value]="user.id">
+        {{ user.name }}
+      </option>
+    </select>
+  </div>
+</ng-container>

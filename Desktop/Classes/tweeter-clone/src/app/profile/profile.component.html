@@ -1,0 +1,22 @@
+<ng-container *ngIf="user">
+  
+<div class="userName">
+    <h2>{{ user.name }}</h2>
+    <p>{{ user.username }}</p>
+  </div>
+  <div class="about">
+    <p>
+      Lead Dev Rel @AlchemyPlatform 🧪 Created @AlchemyLearn | npx create-web3-dapp |
+      Developing: Pot 🪴 | Helping devs break into web3
+    </p>
+    <div class="links">
+      <p>Science & Technology</p>
+      <p>{{ user.website }}</p>
+      <p>Joined August 2020</p>
+    </div>
+    <div class="links">
+      <p>322 Following</p>
+      <p>110.8K Followers</p>
+    </div>
+  </div>
+</ng-container>
